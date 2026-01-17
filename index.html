@@ -3,161 +3,355 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lahiru Madushan - Portfolio</title>
+    <title>Lahiru Madushan | Design & Video Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <!-- Custom Cursor -->
     <div class="cursor"></div>
-
-    <!-- Background Animation -->
-    <div class="bg-animation">
-        <div class="blob blob1"></div>
-        <div class="blob blob2"></div>
-        <div class="blob blob3"></div>
-    </div>
-
-    <!-- Header Navigation -->
-    <header>
-        <nav>
-            <div class="logo">Lahiru Madushan</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
+    <div class="cursor-follower"></div>
+    
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/94704040300" target="_blank" class="whatsapp-float">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- Navigation -->
+    <nav class="glassmorphism">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>Lahiru Madushan</h2>
             </div>
-        </nav>
-    </header>
-
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#services">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#statistics">Statistics</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
     <!-- Home Section -->
-    <section id="home" class="home">
-        <div class="home-container">
-            <div class="profile-photo">
-                <img src="https://via.placeholder.com/200/ffd700/0a0a0a?text=LM" alt="Lahiru Madushan">
+    <section id="home" class="home-section">
+        <div class="home-content">
+            <!-- Profile Image Container -->
+            <div class="profile-container">
+                <div class="profile-image-wrapper">
+                    <img src="profile.png" alt="Lahiru Madushan" class="profile-image">
+                </div>
             </div>
-            <h1>Hello, I'm <span class="highlight">Lahiru Madushan</span></h1>
-            <p class="tagline">Creative Designer & Developer</p>
-            <div class="scroll-indicator">
-                <div class="arrow-down"></div>
+            
+            <div class="hero-text">
+                <h1 class="greeting">Hi, Lahiru Madushan</h1>
+                <h2 class="welcome-title">Welcome To Portfolio</h2>
+                <p class="tagline">Creative Graphic Designer & Video Editor</p>
+            </div>
+            <nav class="hero-nav">
+                <a href="#gallery" class="nav-link">View My Work</a>
+                <a href="#contact" class="nav-link">Get In Touch</a>
+            </nav>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down bounce-arrow"></i>
+        </div>
+        
+        <!-- Background Video -->
+        <video class="background-video" autoplay muted loop playsinline>
+            <source src="background-video.mp4" type="video/mp4">
+            <source src="background-video.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- Floating Neon Particles -->
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+        
+        <!-- Neon Lines -->
+        <div class="neon-line neon-line-1"></div>
+        <div class="neon-line neon-line-2"></div>
+    </section>
+    
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <h2 class="section-title">Design <span class="highlight">Gallery</span></h2>
+        <div class="gallery-container">
+            <div class="swiper gallery-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Design Work 1">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Design Work 2">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1542744095-fcf48d80b0fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Design Work 3">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Design Work 4">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Design Work 5">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://images.unsplash.com/photo-1611605698335-8b1569810432?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Design Work 6">
+                    </div>
+                </div>
+                <div class="swiper-button-next gallery-next"></div>
+                <div class="swiper-button-prev gallery-prev"></div>
             </div>
         </div>
     </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-content glass">
-                <p>I'm a passionate creative professional with over 5 years of experience in graphic design, video editing, and web development. My mission is to deliver high-quality, visually stunning work that exceeds client expectations. I specialize in creating memorable brand identities, engaging social media content, and dynamic video productions that tell compelling stories.</p>
-            </div>
-
-            <div class="skills-section">
-                <h3>Professional Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill">
-                        <div class="skill-header">
-                            <span>Photoshop</span>
-                            <span class="percentage">95%</span>
+    
+    <!-- About & Skills Section -->
+    <section id="about" class="section">
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+        <div class="about-container">
+            <div class="about-content glassmorphism">
+                <h3>Professional Bio</h3>
+                <p>I'm Lahiru Madushan, a professional designer and video editor with over 5 years of experience creating compelling visual content. I specialize in delivering high-quality design and video solutions that help brands stand out and connect with their audience.</p>
+                <p>My expertise spans across graphic design, branding, and video production, with a focus on creating engaging content for social media, advertising, and personal events.</p>
+                
+                <div class="skills">
+                    <h3>Software Skills</h3>
+                    <div class="skills-list">
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span class="skill-name small-icon"><i class="fab fa-adobe"></i> Photoshop</span>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="95"></div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span class="skill-name small-icon"><i class="fab fa-adobe"></i> Illustrator</span>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-header">
-                            <span>Illustrator</span>
-                            <span class="percentage">90%</span>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span class="skill-name small-icon"><i class="fab fa-adobe"></i> Premiere Pro</span>
+                                <span class="skill-percent">70%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 70%"></div>
+                            </div>
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="90"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-header">
-                            <span>Web Development</span>
-                            <span class="percentage">85%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="85"></div>
-                        </div>
-                    </div>
-                    <div class="skill">
-                        <div class="skill-header">
-                            <span>Video Editing</span>
-                            <span class="percentage">75%</span>
-                        </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-progress="75"></div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span class="skill-name small-icon"><i class="fab fa-adobe"></i> After Effects</span>
+                                <span class="skill-percent">40%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 40%"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Services Section -->
-    <section id="services">
-        <div class="container">
-            <h2>Services</h2>
-            <div class="services-grid">
-                <div class="service-card glass">
-                    <div class="service-icon">🎨</div>
-                    <h3>Design Services</h3>
-                    <ul>
-                        <li>Logo Design</li>
-                        <li>Social Media Post Design</li>
-                        <li>Banner Design</li>
-                        <li>Social Media Cover Photo</li>
-                        <li>Book Cover Page Design</li>
-                        <li>Package & Label Design</li>
-                        <li>Photo Editing</li>
-                        <li>Social Media Content Editing</li>
-                    </ul>
+    <section id="services" class="section">
+        <h2 class="section-title">My <span class="highlight">Services</span></h2>
+        <div class="services-container">
+            <!-- Design Services Category -->
+            <div class="service-category-card" data-category="design">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Design Services</h3>
+                        <p class="category-description">Creative visual solutions for your brand</p>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
                 </div>
-
-                <div class="service-card glass">
-                    <div class="service-icon">🎬</div>
-                    <h3>Video Editing Services</h3>
-                    <ul>
-                        <li>Social Media Content</li>
-                        <li>Viral Content</li>
-                        <li>Advertisement Short</li>
-                        <li>Advertisement Long</li>
-                        <li>Wedding Video</li>
-                        <li>Party Video</li>
-                        <li>Other Video Edits</li>
-                    </ul>
+                <div class="services-grid">
+                    <div class="service-item" data-service="logo">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Logo Design</h4>
+                            <p>Professional logo creation with modern design principles</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="social-post">
+                        <div class="service-icon">
+                            <i class="fas fa-share-square"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Social Media Post Design</h4>
+                            <p>Eye-catching social media graphics and posts</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="banner">
+                        <div class="service-icon">
+                            <i class="fas fa-flag"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Banner Design</h4>
+                            <p>Custom banners for websites and promotions</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="cover-photo">
+                        <div class="service-icon">
+                            <i class="fas fa-image"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Social Media Cover Photo</h4>
+                            <p>Professional cover photos for social platforms</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="book-cover">
+                        <div class="service-icon">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Book Cover Page Design</h4>
+                            <p>Attractive book covers that capture attention</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="package-label">
+                        <div class="service-icon">
+                            <i class="fas fa-box"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Package & Label Design</h4>
+                            <p>Product packaging and label design</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="photo-editing">
+                        <div class="service-icon">
+                            <i class="fas fa-magic"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Photo Editing</h4>
+                            <p>Professional photo retouching and enhancement</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="content-editing">
+                        <div class="service-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Social Media Content Editing</h4>
+                            <p>Content creation and editing for social media</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
 
-                <div class="service-card glass">
-                    <div class="service-icon">💻</div>
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>Responsive Website Design</li>
-                        <li>Modern UI/UX</li>
-                        <li>E-commerce Solutions</li>
-                        <li>Custom Web Applications</li>
-                        <li>SEO Optimization</li>
-                        <li>Website Maintenance</li>
-                    </ul>
+            <!-- Video Editing Category -->
+            <div class="service-category-card" data-category="video">
+                <div class="category-header">
+                    <div class="category-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <div class="category-info">
+                        <h3>Video Editing</h3>
+                        <p class="category-description">Professional video production and editing services</p>
+                    </div>
+                    <div class="expand-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <div class="service-item" data-service="social-video">
+                        <div class="service-icon">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Social Media Content</h4>
+                            <p>Engaging short-form videos for social platforms</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="viral-content">
+                        <div class="service-icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Viral Content</h4>
+                            <p>Trending video content that captures attention</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="ad-short">
+                        <div class="service-icon">
+                            <i class="fas fa-ad"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Advertisement Short</h4>
+                            <p>Compelling short advertisement videos</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="ad-long">
+                        <div class="service-icon">
+                            <i class="fas fa-film"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Advertisement Long</h4>
+                            <p>Detailed long-form advertisement videos</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="wedding">
+                        <div class="service-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Wedding Video</h4>
+                            <p>Cinematic wedding video editing</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="party">
+                        <div class="service-icon">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Party Video</h4>
+                            <p>Fun and energetic party video editing</p>
+                        </div>
+                    </div>
+                    <div class="service-item" data-service="other-video">
+                        <div class="service-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4>Other Video Edits</h4>
+                            <p>Custom video editing for any project</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Portfolio Section -->
-    <section id="portfolio">
-        <div class="container">
-            <h2>Work Samples</h2>
+    <section id="portfolio" class="section">
+        <h2 class="section-title">My <span class="highlight">Work</span></h2>
+        <div class="portfolio-container">
             <div class="filter-buttons">
                 <button class="filter-btn active" data-filter="all">All</button>
                 <button class="filter-btn" data-filter="logo">Logo Design</button>
@@ -166,257 +360,125 @@
                 <button class="filter-btn" data-filter="video">Video Editing</button>
                 <button class="filter-btn" data-filter="photo">Photo Editing</button>
             </div>
-
             <div class="portfolio-grid">
-                <div class="portfolio-item glass" data-category="logo">
-                    <img src="https://via.placeholder.com/400x300/ffd700/0a0a0a?text=Logo+Design+1" alt="Logo Design">
-                    <div class="portfolio-overlay">
-                        <div class="zoom-icon">🔍</div>
-                        <p>Logo Design</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item glass" data-category="social">
-                    <img src="https://via.placeholder.com/400x300/ffed4e/0a0a0a?text=Social+Media+1" alt="Social Media">
-                    <div class="portfolio-overlay">
-                        <div class="zoom-icon">🔍</div>
-                        <p>Social Media Post</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item glass" data-category="banner">
-                    <img src="https://via.placeholder.com/400x300/ffd700/0a0a0a?text=Banner+Design+1" alt="Banner">
-                    <div class="portfolio-overlay">
-                        <div class="zoom-icon">🔍</div>
-                        <p>Banner Design</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item glass" data-category="video">
-                    <img src="https://via.placeholder.com/400x300/ffed4e/0a0a0a?text=Video+Edit+1" alt="Video">
-                    <div class="portfolio-overlay">
-                        <div class="zoom-icon">🔍</div>
-                        <p>Video Editing</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item glass" data-category="photo">
-                    <img src="https://via.placeholder.com/400x300/ffd700/0a0a0a?text=Photo+Edit+1" alt="Photo">
-                    <div class="portfolio-overlay">
-                        <div class="zoom-icon">🔍</div>
-                        <p>Photo Editing</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item glass" data-category="logo">
-                    <img src="https://via.placeholder.com/400x300/ffed4e/0a0a0a?text=Logo+Design+2" alt="Logo Design">
-                    <div class="portfolio-overlay">
-                        <div class="zoom-icon">🔍</div>
-                        <p>Logo Design</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item glass" data-category="social">
-                    <img src="https://via.placeholder.com/400x300/ffd700/0a0a0a?text=Social+Media+2" alt="Social Media">
-                    <div class="portfolio-overlay">
-                        <div class="zoom-icon">🔍</div>
-                        <p>Social Media Post</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item glass" data-category="banner">
-                    <img src="https://via.placeholder.com/400x300/ffed4e/0a0a0a?text=Banner+Design+2" alt="Banner">
-                    <div class="portfolio-overlay">
-                        <div class="zoom-icon">🔍</div>
-                        <p>Banner Design</p>
-                    </div>
-                </div>
-
-                <div class="portfolio-item glass" data-category="video">
-                    <img src="https://via.placeholder.com/400x300/ffd700/0a0a0a?text=Video+Edit+2" alt="Video">
-                    <div class="portfolio-overlay">
-                        <div class="zoom-icon">🔍</div>
-                        <p>Video Editing</p>
-                    </div>
-                </div>
+                <!-- Portfolio items will be dynamically generated by JavaScript -->
             </div>
         </div>
     </section>
-
+    
     <!-- Pricing Section -->
-    <section id="pricing">
-        <div class="container">
-            <h2>Pricing Plans</h2>
-            <div class="pricing-grid">
-                <div class="price-card glass">
-                    <h3>Basic</h3>
-                    <div class="price">Rs. 2,500</div>
-                    <button class="expand-btn">View Details</button>
-                    <div class="price-details">
-                        <ul>
-                            <li>5 Social Media Posts</li>
-                            <li>2 Logo Designs</li>
-                            <li>Basic Photo Editing</li>
-                            <li>3 Day Delivery</li>
-                            <li>Email Support</li>
-                        </ul>
-                    </div>
-                    <a href="#contact" class="btn">Choose Plan</a>
-                </div>
-
-                <div class="price-card glass">
-                    <h3>Standard</h3>
-                    <div class="price">Rs. 5,000</div>
-                    <button class="expand-btn">View Details</button>
-                    <div class="price-details">
-                        <ul>
-                            <li>10 Social Media Posts</li>
-                            <li>5 Logo Designs</li>
-                            <li>Advanced Photo Editing</li>
-                            <li>1 Short Video Edit</li>
-                            <li>5 Day Delivery</li>
-                            <li>Priority Support</li>
-                        </ul>
-                    </div>
-                    <a href="#contact" class="btn">Choose Plan</a>
-                </div>
-
-                <div class="price-card glass">
-                    <h3>Premium</h3>
-                    <div class="price">Rs. 10,000</div>
-                    <button class="expand-btn">View Details</button>
-                    <div class="price-details">
-                        <ul>
-                            <li>20 Social Media Posts</li>
-                            <li>10 Logo Designs</li>
-                            <li>Professional Photo Editing</li>
-                            <li>3 Video Edits</li>
-                            <li>Banner & Cover Designs</li>
-                            <li>1 Week Delivery</li>
-                            <li>24/7 Support</li>
-                        </ul>
-                    </div>
-                    <a href="#contact" class="btn">Choose Plan</a>
-                </div>
-
-                <div class="price-card glass featured">
-                    <div class="badge">Popular</div>
-                    <h3>Business Package</h3>
-                    <div class="price">Rs. 8,000</div>
-                    <button class="expand-btn">View Details</button>
-                    <div class="price-details">
-                        <ul>
-                            <li>10 Posts</li>
-                            <li>5 Logos</li>
-                            <li>10 Other Services</li>
-                            <li>Custom Design Options</li>
-                            <li>One Week Delivery</li>
-                            <li>Priority Queue</li>
-                        </ul>
-                    </div>
-                    <a href="#contact" class="btn">Choose Plan</a>
-                </div>
-
-                <div class="price-card glass featured">
-                    <div class="badge">VIP</div>
-                    <h3>VIP Level Package</h3>
-                    <div class="price">Rs. 10,000</div>
-                    <button class="expand-btn">View Details</button>
-                    <div class="price-details">
-                        <ul>
-                            <li>20 Posts</li>
-                            <li>10 Logos</li>
-                            <li>10 Other Services</li>
-                            <li>Premium Templates</li>
-                            <li>Source Files Included</li>
-                            <li>One Week Delivery</li>
-                            <li>Dedicated Support</li>
-                        </ul>
-                    </div>
-                    <a href="#contact" class="btn">Choose Plan</a>
-                </div>
-
-                <div class="price-card glass featured">
-                    <div class="badge">Best Value</div>
-                    <h3>VIP Express Package</h3>
-                    <div class="price">Rs. 15,000</div>
-                    <button class="expand-btn">View Details</button>
-                    <div class="price-details">
-                        <ul>
-                            <li>Unlimited Designs</li>
-                            <li>Full Copyright Protection</li>
-                            <li>All File Formats</li>
-                            <li>Unlimited Revisions</li>
-                            <li>Express Delivery</li>
-                            <li>One Week Timeline</li>
-                            <li>VIP Priority Support</li>
-                        </ul>
-                    </div>
-                    <a href="#contact" class="btn">Choose Plan</a>
-                </div>
+    <section id="pricing" class="section">
+        <h2 class="section-title">Pricing <span class="highlight">Plans</span></h2>
+        <div class="pricing-container">
+            <!-- Pricing cards will be dynamically generated by JavaScript -->
+        </div>
+    </section>
+    
+    <!-- Statistics Section -->
+    <section id="statistics" class="section">
+        <h2 class="section-title">Project <span class="highlight">Us</span></h2>
+        <p class="section-subtitle">We are proud of our journey, marked by successful projects and satisfied clients. Here's a snapshot of our achievements and ventures.</p>
+        <div class="stats-container">
+            <div class="stat-card glassmorphism">
+                <div class="stat-number" data-target="250">0</div>
+                <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="stat-card glassmorphism">
+                <div class="stat-number" data-target="10000">0</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-card glassmorphism">
+                <div class="stat-number" data-target="5000">0</div>
+                <div class="stat-label">Positive Reviews</div>
             </div>
         </div>
     </section>
-
-    <!-- Reviews Section -->
-    <section id="reviews">
-        <div class="container">
-            <h2>Client Reviews</h2>
-            <div class="reviews-grid">
-                <div class="review-card glass">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Exceptional work! Lahiru delivered our logo design ahead of schedule and exceeded all expectations. Highly professional and creative."</p>
-                    <p class="reviewer">- Sarah Johnson</p>
-                </div>
-
-                <div class="review-card glass">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Amazing video editing skills! Our wedding video turned out absolutely beautiful. Worth every penny!"</p>
-                    <p class="reviewer">- Michael Chen</p>
-                </div>
-
-                <div class="review-card glass">
-                    <div class="stars">★★★★★</div>
-                    <p class="review-text">"Great social media designs! Our engagement has increased significantly since working with Lahiru. Highly recommend!"</p>
-                    <p class="reviewer">- Amanda Williams</p>
+    
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <h2 class="section-title">Client <span class="highlight">Reviews</span></h2>
+        <div class="testimonial-container">
+            <div class="marquee">
+                <div class="marquee-content">
+                    <!-- Testimonial cards will be duplicated by JavaScript for infinite scroll -->
                 </div>
             </div>
-
-            <div class="project-counter glass">
-                <div class="counter-number" data-target="250">0</div>
-                <div class="counter-label">Total Projects Completed</div>
+        </div>
+        <div class="counter-container glassmorphism">
+            <div class="counter">
+                <i class="fas fa-project-diagram"></i>
+                <h3>Total Projects Completed</h3>
+                <div class="counter-number" data-target="150">0</div>
             </div>
         </div>
     </section>
-
+    
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Get In Touch</h2>
-            <div class="contact-content glass">
-                <div class="contact-item">
-                    <h3>Name</h3>
-                    <p>Lahiru Madushan</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <p>lahiru.madushan@email.com</p>
-                </div>
-                <div class="contact-item">
-                    <h3>Phone</h3>
-                    <p>+94 77 123 4567</p>
+    <section id="contact" class="section">
+        <h2 class="section-title">Get In <span class="highlight">Touch</span></h2>
+        <div class="contact-container">
+            <div class="contact-card glassmorphism">
+                <h3>Contact Information</h3>
+                <div class="contact-info">
+                    <p><i class="fas fa-user"></i> <strong>Name:</strong> Lahiru Madushan</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> lahiru@example.com</p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong> +94 77 123 4567</p>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/94771234567" class="whatsapp-float" target="_blank">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <path d="M16 0C7.164 0 0 7.164 0 16c0 2.824.738 5.482 2.028 7.784L0 32l8.384-2.196A15.897 15.897 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm0 29.2c-2.464 0-4.836-.676-6.86-1.96l-.492-.292-5.096 1.336 1.36-4.968-.32-.512A13.125 13.125 0 012.8 16c0-7.268 5.932-13.2 13.2-13.2 7.268 0 13.2 5.932 13.2 13.2 0 7.268-5.932 13.2-13.2 13.2zm7.236-9.896c-.396-.2-2.348-1.156-2.712-1.288-.364-.132-.628-.2-.892.2-.264.396-1.024 1.288-1.256 1.556-.232.264-.464.3-.86.1-.396-.2-1.672-.616-3.184-1.964-1.176-1.048-1.972-2.344-2.204-2.74-.232-.396-.024-.612.172-.808.176-.18.396-.464.596-.696.2-.232.264-.396.396-.66.132-.264.068-.496-.032-.696-.1-.2-.892-2.148-1.22-2.94-.32-.772-.648-.668-.892-.68-.232-.012-.496-.016-.76-.016s-.696.1-1.06.496c-.364.396-1.392 1.36-1.392 3.316s1.424 3.848 1.624 4.112c.2.264 2.8 4.276 6.784 5.992.948.408 1.688.652 2.264.836.952.3 1.816.26 2.5.156.764-.112 2.348-.96 2.68-1.888.332-.928.332-1.724.232-1.888-.1-.164-.364-.264-.76-.464z" fill="white"/>
-        </svg>
-    </a>
-
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> Lahiru Madushan. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Order Form Modal -->
+    <div class="modal-overlay" id="orderModal">
+        <div class="modal-content glassmorphism">
+            <button class="close-modal">&times;</button>
+            <h2>Order Form</h2>
+            <p>Please fill out this form to place your order.</p>
+            <form id="orderForm">
+                <div class="form-group">
+                    <label for="customerName">Full Name</label>
+                    <input type="text" id="customerName" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerEmail">Email Address</label>
+                    <input type="email" id="customerEmail" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="customerPhone">Phone Number</label>
+                    <input type="tel" id="customerPhone" placeholder="Your Phone Number" required>
+                </div>
+                <div class="form-group">
+                    <label for="packageSelected">Selected Package</label>
+                    <input type="text" id="packageSelected" readonly>
+                </div>
+                <button type="submit" class="btn-submit">Send Message</button>
+            </form>
+            <div class="contact-actions">
+                <a href="https://wa.me/94700000000" target="_blank" class="action-btn whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="tel:+94771234567" class="action-btn call-btn">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
